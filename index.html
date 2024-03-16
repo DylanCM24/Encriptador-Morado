@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador Morado</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+
+            <header>
+                <div class="titulo">
+                    <h1 class="titulo">Encriptador Morado</h1>
+                </div>
+            </header>
+
+    <main>
+        <section class="caja1">
+            <textarea class="textoEncriptar" placeholder="Texto a encriptar..."></textarea>
+            <p class="indicacion">Solo letras minúsculas sin acento.</p>
+                <div>
+                    <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+        </section>
+
+        <section class="caja2">
+            <textarea id="mensaje" class="mensaje" readonly></textarea>
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+        </section>
+    </main>
+
+       
+
+    <footer>
+        <p class="copyright">&copy; Copyright Encriptador Morado - 2024</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
